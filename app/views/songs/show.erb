@@ -1,0 +1,11 @@
+<% if @created %>
+"Successfully created song."
+<% end %>
+<% if @updated %>
+"Successfully updated song."
+<% end %>
+<h1><%= @song.name %></h1>
+<br>
+<a href="/artists/<%= @song.artist.slug %>"><h3><%= @song.artist.name %></h3></a>
+<br>
+<a href="/genres/<%= @song.genres.first.slug %>"><h3><%= @song.genres.first.name %></h3></a>
