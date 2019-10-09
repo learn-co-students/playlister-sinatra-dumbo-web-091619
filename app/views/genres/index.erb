@@ -1,0 +1,7 @@
+<h1> Wilkommen to the Genres Page!</h1>
+<br>
+<h2>Here is the list of all Genres:</h2>
+<br>
+<% @all_genres.each do |genre|%>
+    <a href="/genres/<%= genre.slug %>"<h4><%= genre.name%></h4></a><br>
+<% end %> 
